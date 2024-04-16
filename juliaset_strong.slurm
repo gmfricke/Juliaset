@@ -8,7 +8,7 @@
 #SBATCH --array 1-7
 #SBATCH --mail-user mfricke@unm.edu
 
-OUTPUT_PATH=juliaset_weak_$SLURM_ARRAY_TASK_ID.tga
+OUTPUT_PATH=juliaset_strong_$SLURM_ARRAY_TASK_ID.tga
 
 SCALE_FACTOR=$((2 ** ($SLURM_ARRAY_TASK_ID-1)))
 
